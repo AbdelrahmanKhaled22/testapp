@@ -1,0 +1,60 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+    background-color: #f0f0f0; /* Background color of each grid item */
+    padding: 20px; /* Padding around each grid item */
+    border: 1px solid #ccc; /* Border around each grid item */
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info {
+    flex: 1; /* Allow item-info to grow to fill remaining space */
+    text-align: center;
+}
+
+.checkbox-container {
+    margin-top: 10px; /* Adjust spacing between item-info and checkbox */
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Adjust spacing between checkbox and label */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* Example background color */
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .actions {
+    display: flex;
+  }
+  
+  .action-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3; /* Example hover color */
+  }
+  
